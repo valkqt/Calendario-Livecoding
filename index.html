@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+    <main>
+      <h1></h1>
+      <div id="calendar"></div>
+      <div id="add-meeting">
+        <h2>Aggiungi Appuntamento</h2>
+        <form onsubmit="return false">
+          <div>
+            <label for="meeting-day">Giorno</label>
+            <input type="text" id="meeting-day" name="meeting-day" readonly placeholder="Scegli un Giorno"/>
+          </div>
+          <div>
+            <label for="meeting-time">Orario Evento</label>
+            <input type="time" id="meeting-time" name="meeting-time" />
+          </div>
+          <div>
+            <label for="meeting-text">Scrivi un meeting</label>
+            <input type="text" id="meeting-text" name="meeting-text" />
+          </div>
+          <button type="submit" >Salva Appuntamento</button>
+        </form>
+      </div>
+      <div id="new-meetings">
+        <h2></h2>
+        <ul></ul>
+      </div>
+    </main>
+    <script src="scripts/index.js"></script>
+  </body>
+</html>
